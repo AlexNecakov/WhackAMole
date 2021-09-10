@@ -1,0 +1,1 @@
+-wto "fababde23c3d4d59b0aff1cc765b8b6a" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "TBgameCounter_behav" "xil_defaultlib.TBgameCounter" "xil_defaultlib.glbl" -log "elaborate.log" 

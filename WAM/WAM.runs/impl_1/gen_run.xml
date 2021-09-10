@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1575780081">
+  <File Type="BITSTR-BMM" Name="wamTop_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="wamTop_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="wamTop_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="wamTop_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="wamTop.tcl"/>
+  <File Type="OPT-TIMING" Name="wamTop_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="wamTop_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="wamTop_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="wamTop_reports.tcl"/>
+  <File Type="OPT-DRC" Name="wamTop_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="wamTop.hwdef"/>
+  <File Type="PWROPT-DCP" Name="wamTop_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="wamTop_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="wamTop_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="wamTop_placed.dcp"/>
+  <File Type="PLACE-IO" Name="wamTop_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="wamTop_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="wamTop_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="wamTop_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="wamTop_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="wamTop_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="wamTop_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="wamTop_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="wamTop_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="wamTop.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="wamTop_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="wamTop_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="wamTop_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="wamTop.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="wamTop_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="wamTop_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="wamTop_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="wamTop_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="wamTop_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="wamTop_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="wamTop_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="wamTop.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="wamTop_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="wamTop_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="wamTop_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="wamTop_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="wamTop_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="wamTop_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="wamTop_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="wamTop_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="wamTop_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="wamTop_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="wamTop_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="wamTop_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="wamTop_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="wamTop_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="wamTop_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="wamTop_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="wamTop_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="wamTop_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="wamTop_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="wamTop_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="wamTop_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="wamTop.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="wamTop_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="wamTop.rbt"/>
+  <File Type="BITSTR-NKY" Name="wamTop.nky"/>
+  <File Type="PDI-FILE" Name="wamTop.pdi"/>
+  <File Type="RCFI_FILE" Name="wamTop.rcfi"/>
+  <File Type="CFI_FILE" Name="wamTop.cfi"/>
+  <File Type="RNPI_FILE" Name="wamTop.rnpi"/>
+  <File Type="NPI_FILE" Name="wamTop.npi"/>
+  <File Type="RBD_FILE" Name="wamTop.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="wamTop.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="wamTop.sysdef"/>
+  <File Type="BG-BGN" Name="wamTop.bgn"/>
+  <File Type="BG-DRC" Name="wamTop.drc"/>
+  <File Type="RDI-RDI" Name="wamTop.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../BinaryBCDConverter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LCCD.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../MUXValidator.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../clockDiv.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../clock_divider_1Hz.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../clock_divider_1kHz.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../counter8bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../debouncer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../display_control.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gameCounter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rngGen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../seven_segment_decoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/wamTop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../BinaryBCDConverter_testbench.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sim_1/new/TBgameCounter.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../MUXValidatortb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../debouncertb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../counter8bittb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="wamTop"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

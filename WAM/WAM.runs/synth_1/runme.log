@@ -1,0 +1,479 @@
+
+*** Running vivado
+    with args -log wamTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source wamTop.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+  **** IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source wamTop.tcl -notrace
+Command: synth_design -top wamTop -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 436 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 966.246 ; gain = 233.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'wamTop' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/wamTop.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/wamTop.v:41]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider_1Hz' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clock_divider_1Hz.v:24]
+	Parameter constantNumber bound to: 50000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider_1Hz' (1#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clock_divider_1Hz.v:24]
+WARNING: [Synth 8-7023] instance 'hzClockDiv' of module 'clock_divider_1Hz' has 3 connections declared, but only 2 given [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/wamTop.v:41]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/wamTop.v:42]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider_1kHz' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clock_divider_1kHz.v:24]
+	Parameter constantNumber bound to: 50000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider_1kHz' (2#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clock_divider_1kHz.v:24]
+WARNING: [Synth 8-7023] instance 'khzClockDiv' of module 'clock_divider_1kHz' has 3 connections declared, but only 2 given [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/wamTop.v:42]
+INFO: [Synth 8-6157] synthesizing module 'LCCD' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/LCCD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clockdivider' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:45]
+	Parameter constantNumber bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clockdivider' (3#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:45]
+INFO: [Synth 8-6157] synthesizing module 'clockdivider__parameterized0' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:45]
+	Parameter constantNumber bound to: 50000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clockdivider__parameterized0' (3#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:45]
+INFO: [Synth 8-6157] synthesizing module 'clockdivider__parameterized1' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:45]
+	Parameter constantNumber bound to: 25000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clockdivider__parameterized1' (3#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:45]
+INFO: [Synth 8-6157] synthesizing module 'clockdivider__parameterized2' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:45]
+	Parameter constantNumber bound to: 12500000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clockdivider__parameterized2' (3#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:45]
+INFO: [Synth 8-226] default block is never used [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/LCCD.v:43]
+INFO: [Synth 8-226] default block is never used [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/LCCD.v:61]
+INFO: [Synth 8-226] default block is never used [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/LCCD.v:79]
+WARNING: [Synth 8-6014] Unused sequential element o_reg was removed.  [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/LCCD.v:45]
+WARNING: [Synth 8-6014] Unused sequential element o_reg was removed.  [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/LCCD.v:63]
+WARNING: [Synth 8-6014] Unused sequential element o_reg was removed.  [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/LCCD.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'LCCD' (4#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/LCCD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gameCounter' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/gameCounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gameCounter' (5#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/gameCounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rngGen' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:23]
+WARNING: [Synth 8-5788] Register c_reg in module rngGen is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'rngGen' (6#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/debouncer.v:23]
+	Parameter COUNT_MAX bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (7#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/debouncer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUXValidator' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/MUXValidator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUXValidator' (8#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/MUXValidator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter8bit' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/counter8bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter8bit' (9#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/counter8bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BinaryBCDConverter' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/BinaryBCDConverter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'BinaryBCDConverter' (10#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/BinaryBCDConverter.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'bcd' does not match port width (12) of module 'BinaryBCDConverter' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/wamTop.v:58]
+WARNING: [Synth 8-689] width (1) of port connection 'bcd' does not match port width (12) of module 'BinaryBCDConverter' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/wamTop.v:59]
+INFO: [Synth 8-6157] synthesizing module 'display_control' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/display_control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_control' (11#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/display_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_decoder' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/seven_segment_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_decoder' (12#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/seven_segment_decoder.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'CA' does not match port width (1) of module 'seven_segment_decoder' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/wamTop.v:63]
+WARNING: [Synth 8-7023] instance 'sevDec' of module 'seven_segment_decoder' has 10 connections declared, but only 4 given [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/wamTop.v:63]
+WARNING: [Synth 8-3848] Net khzClock in module/entity wamTop does not have driver. [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/wamTop.v:32]
+WARNING: [Synth 8-3848] Net hzClock in module/entity wamTop does not have driver. [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/wamTop.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'wamTop' (13#1) [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/wamTop.v:23]
+WARNING: [Synth 8-3917] design wamTop has port sevenSegment[6] driven by constant 0
+WARNING: [Synth 8-3917] design wamTop has port sevenSegment[5] driven by constant 0
+WARNING: [Synth 8-3917] design wamTop has port sevenSegment[4] driven by constant 0
+WARNING: [Synth 8-3917] design wamTop has port sevenSegment[3] driven by constant 0
+WARNING: [Synth 8-3917] design wamTop has port sevenSegment[2] driven by constant 0
+WARNING: [Synth 8-3917] design wamTop has port sevenSegment[1] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1038.281 ; gain = 305.652
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1038.281 ; gain = 305.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1038.281 ; gain = 305.652
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1038.281 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wamTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/wamTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1134.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1134.164 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1134.164 ; gain = 401.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1134.164 ; gain = 401.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1134.164 ; gain = 401.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1134.164 ; gain = 401.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 22    
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 14    
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  16 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock_divider_1Hz 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clock_divider_1kHz 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockdivider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockdivider__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockdivider__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockdivider__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module LCCD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module gameCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module rngGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module MUXValidator 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counter8bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module BinaryBCDConverter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 11    
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 7     
+Module display_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module seven_segment_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  16 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design wamTop has port sevenSegment[6] driven by constant 0
+WARNING: [Synth 8-3917] design wamTop has port sevenSegment[5] driven by constant 0
+WARNING: [Synth 8-3917] design wamTop has port sevenSegment[4] driven by constant 0
+WARNING: [Synth 8-3917] design wamTop has port sevenSegment[3] driven by constant 0
+WARNING: [Synth 8-3917] design wamTop has port sevenSegment[2] driven by constant 0
+WARNING: [Synth 8-3917] design wamTop has port sevenSegment[1] driven by constant 0
+WARNING: [Synth 8-3331] design wamTop has unconnected port level[1]
+WARNING: [Synth 8-3331] design wamTop has unconnected port level[0]
+INFO: [Synth 8-3886] merging instance 'outIn_regi_11' (FDC) to 'outIn_regi_10'
+INFO: [Synth 8-3886] merging instance 'outIn_regi_5' (FDC) to 'outIn_regi_4'
+INFO: [Synth 8-3886] merging instance 'outIn_regi_9' (FDC) to 'outIn_regi_10'
+INFO: [Synth 8-3886] merging instance 'outIn_regi_3' (FDC) to 'outIn_regi_4'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dc/dig_out_reg[2] )
+INFO: [Synth 8-3886] merging instance 'dc/AN_reg[4]' (FDP) to 'dc/AN_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dc/AN_reg[5]' (FDP) to 'dc/AN_reg[6]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dc/AN_reg[6] )
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin op with 1st driver pin 'lvlClockDiv/nolabel_line36/op_reg/Q' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:80]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin op with 2nd driver pin 'GND' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:80]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net op is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:80]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin op with 1st driver pin 'lvlClockDiv/nolabel_line37/op_reg/Q' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:80]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin op with 2nd driver pin 'GND' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:80]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net op is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:80]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin op with 1st driver pin 'lvlClockDiv/nolabel_line38/op_reg/Q' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:80]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin op with 2nd driver pin 'GND' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:80]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net op is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:80]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin op with 1st driver pin 'lvlClockDiv/nolabel_line39/op_reg/Q' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:80]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin op with 2nd driver pin 'GND' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:80]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net op is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/clockDiv.v:80]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin sel0[0] with 1st driver pin 'masterCounter/count_reg[0]/Q' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/gameCounter.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin sel0[0] with 2nd driver pin 'VCC' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/gameCounter.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net sel0[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.srcs/sources_1/new/gameCounter.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'rng/outLed_reg[4]/Q' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'rng/outLed_reg[3]/Q' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'rng/outLed_reg[2]/Q' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'rng/outLed_reg[1]/Q' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'rng/outLed_reg[0]/Q' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/rngGen.v:72]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rng/c_reg[2]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rng/c_reg[1]_C )
+WARNING: [Synth 8-3332] Sequential element (rng/c_reg[2]_C) is unused and will be removed from module wamTop.
+WARNING: [Synth 8-3332] Sequential element (rng/c_reg[1]_C) is unused and will be removed from module wamTop.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1134.164 ; gain = 401.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1134.164 ; gain = 401.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1134.164 ; gain = 401.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module wamTop.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module wamTop.
+WARNING: [Synth 8-3332] Sequential element (rng/c_reg[2]_LDC) is unused and will be removed from module wamTop.
+WARNING: [Synth 8-3332] Sequential element (rng/c_reg[2]_P) is unused and will be removed from module wamTop.
+WARNING: [Synth 8-3332] Sequential element (rng/c_reg[1]_LDC) is unused and will be removed from module wamTop.
+WARNING: [Synth 8-3332] Sequential element (rng/c_reg[1]_P) is unused and will be removed from module wamTop.
+WARNING: [Synth 8-3332] Sequential element (rng/c_reg[0]_LDC) is unused and will be removed from module wamTop.
+WARNING: [Synth 8-3332] Sequential element (rng/c_reg[0]_C) is unused and will be removed from module wamTop.
+WARNING: [Synth 8-3332] Sequential element (rng/c_reg[0]_P) is unused and will be removed from module wamTop.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1134.164 ; gain = 401.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1142.969 ; gain = 410.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1142.969 ; gain = 410.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1142.969 ; gain = 410.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1142.969 ; gain = 410.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1142.969 ; gain = 410.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1142.969 ; gain = 410.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    20|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    20|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1142.969 ; gain = 410.340
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 30 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1142.969 ; gain = 314.457
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1142.969 ; gain = 410.340
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1151.945 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1161.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 39 Warnings, 30 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1161.152 ; gain = 735.512
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1161.152 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alexn/OneDrive/Documents/Projects/whackam01e/WAM/WAM.runs/synth_1/wamTop.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file wamTop_utilization_synth.rpt -pb wamTop_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  7 23:41:58 2019...
